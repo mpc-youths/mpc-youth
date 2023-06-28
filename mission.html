@@ -19,35 +19,33 @@
     
     <div class="card">
       <div class="card-header"><h1>
-        Mission-1
+        Mission-1 <b>Want to tell about Jesus for 50 persons</b>
       </h1></div>
       <div class="card-body">
 
+    
         <div id="cont" data-pct="100">
             <svg id="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
               <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
               <circle id="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
             </svg>
           </div>
-          <label for="percent">Type a percent!</label>
-          <input id="percent" name="percent">
-        
+          <label for="percent" id="percent-label">95</label>
 
-      </div> 
+
       <div class="card-footer">Footer</div>
     </div>
   </div>
   
-   
-
-
     
 </body>
 
 <script>
-    document.getElementById("percent").addEventListener("change", function() {
-      var val = parseInt(this.value);
-      var circle = document.querySelector("#svg #bar");
+    var percentLabel = document.getElementById("percent-label");
+    var circle = document.querySelector("#svg #bar");
+
+    function updateProgress() {
+      var val = parseInt(percentLabel.textContent);
 
       if (isNaN(val)) {
         val = 100;
@@ -67,6 +65,9 @@
         circle.style.strokeDashoffset = pct;
         document.getElementById("cont").setAttribute("data-pct", val);
       }
-    });
+    }
+
+    // Initial update
+    updateProgress();
   </script>
 </html>
