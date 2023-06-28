@@ -31,6 +31,10 @@
         background-color:#0e2b3d;
         color: white;
     }
+    tr:nth-child(even){
+        color:#0e2b3d;
+        background-color: white;
+    }
     
     #heads{
         text-align: center;
