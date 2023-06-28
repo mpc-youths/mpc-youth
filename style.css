@@ -32,10 +32,14 @@
         color: white;
     }
     
-    h2{
+    #heads{
         text-align: center;
         font-family: sans-serif;
         color: red;
+    }
+    .custom{
+        border: 3px solid #114362 !important;
+        color:#0e2b3d !important;
     }
     
     /* style for progress bar */
