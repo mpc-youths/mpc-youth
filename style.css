@@ -35,7 +35,10 @@
         color:#0e2b3d;
         background-color: white;
     }
-    
+    span{
+      color:#0e2b3d;
+      font-size: 25px;
+    }
     #heads{
         text-align: center;
         font-family:monospace;
@@ -46,7 +49,11 @@
         border: 3px solid #114362 !important;
         color:#0e2b3d !important;
     }
-    
+    #verse{
+      color:#0e2b3d;
+      font-weight: bold;
+      text-align: center;
+    }
     /* style for progress bar */
 
     .progress-container {
@@ -92,5 +99,5 @@
     }
     
     b{
-      color:#1b6dc1
+      color:#1b6dc1;
     }
