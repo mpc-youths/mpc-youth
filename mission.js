@@ -1,13 +1,13 @@
-var percentLabel = document.getElementById("percent-label");
-var circle = document.querySelector("#svg #bar");
+function updateProgress(progressContainer) {
+  var percentLabel = progressContainer.querySelector('.progress-label');
+  var circle = progressContainer.querySelector('.progress-bar');
 
-function updateProgress() {
   var val = parseInt(percentLabel.textContent);
 
   if (isNaN(val)) {
     val = 100;
   } else {
-    var r = circle.getAttribute("r");
+    var r = circle.getAttribute('r');
     var c = Math.PI * (r * 2);
 
     if (val < 0) {
@@ -20,9 +20,13 @@ function updateProgress() {
     var pct = ((100 - val) / 100) * c;
 
     circle.style.strokeDashoffset = pct;
-    document.getElementById("cont").setAttribute("data-pct", val);
+    circle.style.strokeDasharray = c;
+    progressContainer.setAttribute('data-pct', val);
   }
 }
 
-// Initial update
-updateProgress();
+// Example usage
+var progressContainers = document.querySelectorAll('.progress-container');
+progressContainers.forEach(function (container) {
+  updateProgress(container);
+});
