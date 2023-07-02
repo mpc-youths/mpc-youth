@@ -26,7 +26,10 @@
         background-color:white;
         color:black;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 25px;
+    }
+    td{
+      font-size: 20px;
     }
     tr:nth-child(odd){
         background-color:#0e2b3d;
@@ -35,6 +38,10 @@
     tr:nth-child(even){
         color:#0e2b3d;
         background-color: white;
+    }
+    .points{
+      font-weight: bold;
+      
     }
     span{
       color:#0e2b3d;
