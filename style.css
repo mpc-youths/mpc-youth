@@ -64,6 +64,10 @@
       text-align: center;
       text-shadow: 2px 2px 2px #114362; 
     }
+#link{
+  font-size: 25px;
+}
+
     /* style for progress bar */
 
     .progress-container {
