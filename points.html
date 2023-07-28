@@ -10,7 +10,7 @@
 
 <body>
     <h2 id="heads">Meippanin Pathai Youth Boys Points Table </h2>
-     <table>
+     <table id="table">
         <thead>
             <tr>
                 <th>Name</th>
@@ -24,27 +24,32 @@
     <a id='link' href="point-details.html">More about Point details</a>
 </body>
 <script>
-  // fetch the name and points from the details.json and upade it in the tables and align it in the ascending order based on the points
- let h1=document.getElementById('heads')
   fetch("details.json")
-  .then((response) => response.json())
-  .then((persons) => {
-    // Loop through the persons array and create list items for each person
-    persons.forEach((person) => {
-        // store the name and points in array
-        
-      const name = document.createElement("td");
-      const points = document.createElement("td");
-      name.textContent = `${person.name}`;
-      points.textContent = `${person.points}`;
-      h1.appendChild(name);
-        h1.appendChild(points);
-    });
-  })
-  .catch((error) => console.error("Error fetching JSON data:", error));
+        .then((response) => response.json())
+        .then((persons) => {
+            // Sort the persons array based on points in ascending order
+            persons.sort((a, b) => b.points - a.points);
 
+            // Get the table body element to append rows to it
+            const tbody = document.querySelector("#table tbody");
 
-   
-    
-</script>
+            // Loop through the persons array and create rows for each person
+            persons.forEach((person) => {
+                const row = document.createElement("tr");
+
+                const name = document.createElement("td");
+                name.textContent = person.name;
+                
+                const points = document.createElement("td");
+                points.textContent = person.points;
+                points.classList.add("points");
+                row.appendChild(name);
+
+                row.appendChild(points);
+
+                tbody.appendChild(row);
+            });
+        })
+        .catch((error) => console.error("Error fetching JSON data:", error));
+    </script>
 </html>
