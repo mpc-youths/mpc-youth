@@ -19,28 +19,24 @@
     }
     table{
         margin: 20px auto;
-        width: 80%;
-       
+        width: 50%;
+        color:black;
+        font-weight: bold;
     }
     th{
         background-color:white;
-        color:black;
+        
         font-weight: bold;
         font-size: 25px;
     }
     td{
       font-size: 20px;
     }
-    tr:nth-child(odd){
-        background-color:#0e2b3d;
-        color: white;
-    }
-    tr:nth-child(even){
-        color:#0e2b3d;
-        background-color: white;
-    }
+    
     .points{
       font-weight: bold;
+      font-size: 25px;
+      color:#1b6dc1
       
     }
     span{
@@ -64,6 +60,10 @@
       text-align: center;
       text-shadow: 2px 2px 2px #114362; 
     }
+#link{
+  font-size: 25px;
+}
+
     /* style for progress bar */
 
     .progress-container {
