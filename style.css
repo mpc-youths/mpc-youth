@@ -1,7 +1,7 @@
 #center{
     text-align: center;
 }
-.navbar a:hover{
+.navbar a:not(.logo):hover{
     background-color:#0e2b3d;
     color: white;
     border-radius: 10px;
