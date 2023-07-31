@@ -85,6 +85,7 @@
     
     .progress-svg .progress-bar {
       stroke: #ff0000;
+      
     }
     
     .progress-container::after {
