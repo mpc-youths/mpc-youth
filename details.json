@@ -1,31 +1,31 @@
 [
     {
         "name":"Austin",
-        "points":29
+        "points":46
     },
     {
         "name":"Branish",
-        "points":9
+        "points":17
     },
     {
         "name":"Stabin",
-        "points":38
+        "points":53
     },
     {
         "name":"Steve",
-        "points":70
+        "points":115
     },
     {
         "name":"Benani",
-        "points":29
+        "points":35
     },
     {
         "name":"John",
-        "points":69
+        "points":104
     },
     {
         "name":"Roshan",
-        "points":24
+        "points":55
     },
     {
         "name":"Retheesh",
@@ -45,6 +45,6 @@
     },
     {
         "name":"Joel",
-        "points":96
+        "points":162
     }
 ]
