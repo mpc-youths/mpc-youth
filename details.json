@@ -1,7 +1,7 @@
 [
     {
         "name":"Austin",
-        "points":201
+        "points":212
     },
     {
         "name":"Branish",
@@ -9,11 +9,11 @@
     },
     {
         "name":"Stabin",
-        "points":89
+        "points":102
     },
     {
         "name":"Steve",
-        "points":241
+        "points":351
     },
     {
         "name":"Benani",
@@ -21,23 +21,23 @@
     },
     {
         "name":"John",
-        "points":146
+        "points":193
     },
     {
         "name":"Roshan",
-        "points":257
+        "points":348
     },
     {
         "name":"Retheesh",
-        "points":57
+        "points":61
     },
     {
         "name":"Jeffrey",
-        "points":33
+        "points":56
     },
     {
         "name":"Asheth",
-        "points":256
+        "points":349
     },
     {
         "name":"Riyo",
@@ -45,6 +45,6 @@
     },
     {
         "name":"Joel",
-        "points":205
+        "points":216
     }
 ]
