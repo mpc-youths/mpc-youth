@@ -1,50 +1,50 @@
 [
     {
         "name":"Austin",
-        "points":264
+        "points":349
     },
     {
         "name":"Branish",
-        "points":45
+        "points":51
     },
     {
         "name":"Stabin",
-        "points":134
+        "points":142
     },
     {
         "name":"Steve",
-        "points":533
+        "points":666
     },
     {
         "name":"Benani",
-        "points":55
+        "points":66
     },
     {
         "name":"John",
-        "points":222
+        "points":230
     },
     {
         "name":"Roshan",
-        "points":617
+        "points":621
     },
     {
         "name":"Retheesh",
-        "points":80
-    },
-    {
-        "name":"Jeffrey",
-        "points":213
-    },
-    {
-        "name":"Asheth",
-        "points":461
-    },
-    {
-        "name":"Riyo",
         "points":86
     },
     {
+        "name":"Jeffrey",
+        "points":246
+    },
+    {
+        "name":"Asheth",
+        "points":561
+    },
+    {
+        "name":"Riyo",
+        "points":136
+    },
+    {
         "name":"Joel",
-        "points":228
+        "points":237
     }
 ]
